@@ -11,6 +11,7 @@
         <module>java-nio</module>
         <module>java-container</module>
         <module>java-string</module>
+        <module>java-base</module>
     </modules>
     <packaging>pom</packaging>
 
