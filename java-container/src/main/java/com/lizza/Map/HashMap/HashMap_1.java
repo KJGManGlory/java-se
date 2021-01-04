@@ -8,7 +8,7 @@ import java.util.HashMap;
  * @date 2019年5月27日
  * @version v1.0
  */
-public class Map_1 {
+public class HashMap_1 {
 
 	public static void main(String[] args) {
 		HashMap<Integer, Object> map = new HashMap<>(2);
