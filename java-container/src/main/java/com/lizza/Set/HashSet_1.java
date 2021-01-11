@@ -1,6 +1,7 @@
-package com.lizza.set;
+package com.lizza.Set;
 
 import java.util.HashSet;
+import java.util.Iterator;
 
 /**
  * HashSet原理学习
@@ -17,6 +18,8 @@ public class HashSet_1 {
 		set.add("JavaScript");
 		set.add(null);
 		set.add("Java");
+		Iterator<String> iterator = set.iterator();
+
 		System.out.println(set.toString());
 	}
 }
