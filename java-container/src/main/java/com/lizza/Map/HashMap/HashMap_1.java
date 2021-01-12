@@ -1,6 +1,8 @@
 package com.lizza.Map.HashMap;
 
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  * HashMap源码学习
@@ -17,5 +19,7 @@ public class HashMap_1 {
 		Object v2 = map.put(1, "2");
 		System.out.println(v2);
 		System.out.println(map);
+		Map<Integer, Object> sMap = Collections.synchronizedMap(map);
+		sMap.put(2, "A");
 	}
 }
