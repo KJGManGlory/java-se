@@ -6,6 +6,7 @@ package com.lizza.lambda;
 public class Lambda_1 {
 
     public static void main(String[] args){
+        // 匿名内部类
         Runnable r1 = new Runnable() {
             @Override
             public void run() {
@@ -14,6 +15,7 @@ public class Lambda_1 {
         };
         r1.run();
         System.out.println("------------------");
+        // lambda 表达式
         Runnable r2 = () -> System.out.println("Hello Lambda!");
         r2.run();
     }
