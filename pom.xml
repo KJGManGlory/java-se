@@ -13,6 +13,7 @@
         <module>java-string</module>
         <module>java-base</module>
         <module>java-exception</module>
+        <module>java-8</module>
     </modules>
     <packaging>pom</packaging>
 
