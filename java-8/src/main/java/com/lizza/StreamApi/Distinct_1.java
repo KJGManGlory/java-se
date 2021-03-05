@@ -1,9 +1,12 @@
 package com.lizza.StreamApi;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Objects;
+import cn.afterturn.easypoi.excel.annotation.Excel;
+import com.google.common.collect.Maps;
+import com.google.common.collect.Sets;
+import lombok.*;
+
+import java.util.*;
+import java.util.function.Predicate;
 
 /**
  * @Desc:
@@ -21,18 +24,25 @@ public class Distinct_1 {
         list.add(new Student(6, "S-6"));
         list.add(new Student(12, "S-12"));
         System.out.println(list);
-        list.stream().distinct().sorted(Comparator.comparingInt(o -> o.id)).forEach(System.out::println);
+        list.stream()
+                .distinct()
+                .sorted(Comparator.comparingInt(o -> o.id))
+                .forEach(System.out::println);
     }
 }
 
+@Data
+@NoArgsConstructor
+@Builder
+@AllArgsConstructor
+@ToString
 class Student {
-    int id;
-    String name;
 
-    public Student(int id, String name) {
-        this.id = id;
-        this.name = name;
-    }
+    @Excel(name = "ID", orderNum = "0")
+    Integer id;
+
+    @Excel(name = "姓名", orderNum = "0")
+    String name;
 
     @Override
     public boolean equals(Object o) {
