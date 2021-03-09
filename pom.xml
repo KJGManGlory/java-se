@@ -15,6 +15,7 @@
         <module>java-exception</module>
         <module>java-8</module>
         <module>guava</module>
+        <module>java-oop</module>
     </modules>
     <packaging>pom</packaging>
 
