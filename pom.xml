@@ -16,6 +16,7 @@
         <module>java-8</module>
         <module>guava</module>
         <module>java-oop</module>
+        <module>java-file</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -41,6 +42,11 @@
                 <groupId>cn.afterturn</groupId>
                 <artifactId>easypoi-annotation</artifactId>
                 <version>4.1.0</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>5.6.1</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
